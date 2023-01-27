@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            .container{
+                position: relative;
+                width: 50%;
+            }
+            .image{
+                display: block;
+                width:100%;
+                height:auto;
+            }
+            .overlay{
+                position:absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: lightblue;
+                opacity:0;
+                width: 100%;
+                height: 100%;
+                transition: 1s ease;
+            }
+            .container:hover .overlay{
+                opacity: 1;
+                transform: rotateZ(360deg);
+            }
+            .text{
+               color: black;
+                font-size: 15px;
+                font-family: algerian;
+                left: 50%;
+                top: 50%;
+                position: absolute;
+                -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="images/a.jpg" alt="Nature" class="image">
+            <div class="overlay">
+                <div class="text">
+                    <p>Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
